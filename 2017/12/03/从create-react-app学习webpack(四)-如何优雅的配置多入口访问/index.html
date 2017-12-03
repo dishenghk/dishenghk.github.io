@@ -15,7 +15,7 @@
 <meta property="og:url" content="https://www.dishenghk.cn/2017/12/03/从create-react-app学习webpack(四)-如何优雅的配置多入口访问/index.html">
 <meta property="og:site_name" content="笛声的博客">
 <meta property="og:description" content="####在大多数情况底下,我们只需要一个单页应用便可以顺利的完成许多应用场景.但是还是免不了有很多情况下我们需要通过多页才能够顺利的完成任务. 本篇文章就为大家讲述如何快速优雅的 生成多页访问.1.增加入口文件2.增加HtmlWebpackPlugin ###注意:本文环境实在开发环境下配置,生产环境略有不同.稍微整改即可 ###注意:本文环境实在开发环境下配置,生产环境略有不同.稍微整改即可 #">
-<meta property="og:updated_time" content="2017-12-03T13:06:50.802Z">
+<meta property="og:updated_time" content="2017-12-03T13:08:17.648Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="从create-react-app学习webpack(四)-如何优雅的配置多入口访问">
 <meta name="twitter:description" content="####在大多数情况底下,我们只需要一个单页应用便可以顺利的完成许多应用场景.但是还是免不了有很多情况下我们需要通过多页才能够顺利的完成任务. 本篇文章就为大家讲述如何快速优雅的 生成多页访问.1.增加入口文件2.增加HtmlWebpackPlugin ###注意:本文环境实在开发环境下配置,生产环境略有不同.稍微整改即可 ###注意:本文环境实在开发环境下配置,生产环境略有不同.稍微整改即可 #">
@@ -168,7 +168,7 @@
 <p>本篇文章就为大家讲述如何快速优雅的 生成多页访问.<br>1.增加入口文件<br>2.增加HtmlWebpackPlugin</p>
 <p>###注意:本文环境实在开发环境下配置,生产环境略有不同.稍微整改即可</p>
 <p>###注意:本文环境实在开发环境下配置,生产环境略有不同.稍微整改即可</p>
-<p>###注意:本文环境实在开发环境下配置,生产环境略有不同.稍微整改即可</p>
+<p>###注意:本文环境实在开发环境下配置,生产环境略有不同.稍微整改即可<br><a id="more"></a></p>
 <p>#1.增加入口文件</p>
 <blockquote>
 <p>webpack.config.prod.js<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">//原生代码</span><br><span class="line">entry: [</span><br><span class="line">    //引入三个es6新特性</span><br><span class="line">    require.resolve(&apos;./polyfills&apos;),</span><br><span class="line">    //载入热更新</span><br><span class="line">    require.resolve(&apos;react-dev-utils/webpackHotDevClient&apos;),</span><br><span class="line">    //入口文件</span><br><span class="line">    paths.appIndexJs,</span><br><span class="line">  ],</span><br></pre></td></tr></table></figure></p>
